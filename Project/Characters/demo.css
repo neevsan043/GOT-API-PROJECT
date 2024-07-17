@@ -1,0 +1,158 @@
+@font-face {
+    font-family: got;
+    src: url(components/got.ttf);
+}
+
+html {
+    font-family: got;
+    letter-spacing: 3px;
+}
+
+body {
+    background: url(components/johnsnow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+.nav ul {
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.line {
+    border-top: 2px solid grey;
+    flex-grow: 1;
+}
+
+.got {
+    width: 100%;
+    max-width: 300px;
+}
+
+.nav li {
+    padding: 10px;
+}
+
+.nav li:hover {
+    color: orange;
+    font-size: 1.5rem;
+    padding: 5.5px;
+}
+
+.travel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prev, .next {
+    color: white;
+}
+
+.container {
+    text-decoration: none;
+    color: grey;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.text {
+    color: white;
+    text-align: end;
+    font-size: 2rem;
+    line-height: 1.5;
+    margin: 4rem;
+    height: 25vh;
+}
+
+.text h6 {
+    letter-spacing: 5px;
+    color: grey;
+    font-size: 1rem;
+}
+
+.text h1 {
+    color: snow;
+    letter-spacing: 10px;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
+    .text {
+        font-size: 1.8rem;
+        margin: 3rem;
+    }
+    .text h1 {
+        font-size: 1.5rem;
+    }
+    .nav li:hover {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .text {
+        font-size: 1.6rem;
+        margin: 2rem;
+    }
+    .text h1 {
+        font-size: 1.2rem;
+    }
+    .nav {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .text {
+        font-size: 1.4rem;
+        margin: 1rem;
+    }
+    .text h1 {
+        font-size: 1rem;
+    }
+    .nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .nav li {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .text {
+        font-size: 1.2rem;
+        margin: 0.5rem;
+    }
+    .text h1 {
+        font-size: 0.8rem;
+    }
+    .nav ul {
+        gap: 2px;
+    }
+    .nav li {
+        padding: 3px;
+    }
+    .got {
+        width: 80%;
+    }
+}
