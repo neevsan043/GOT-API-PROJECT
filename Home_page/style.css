@@ -1,0 +1,65 @@
+@font-face {
+    font-family: got ;
+    src: url(Components/got.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: got;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+.section1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.815),rgba(0,0,0,0.815)),url(./Components/OIG4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+}
+.section1 img{
+    width: 20vw;
+}
+nav ul a{
+    font-size: 0.7rem;
+    padding: 1rem;
+}
+nav h1{
+    color: white;
+    font-size: 1.5rem;
+}
+.center{
+    height: 50vh;
+    margin: 10rem;
+    font-size: 0.8rem;
+    color: white;
+    text-align: center;
+}
+.center img{
+    width: 50vw;
+    color: rgb(228, 213, 177);
+}
+.center p{
+    font-size: 1rem ;
+    /* letter-spacing: 4px; */
+    font-family: "Gothic A1", sans-serif;
+}
+
+
+
