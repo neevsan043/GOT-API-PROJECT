@@ -60,6 +60,37 @@ nav h1{
     /* letter-spacing: 4px; */
     font-family: "Gothic A1", sans-serif;
 }
+.banners_houses{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.445)),url(./Components/background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    padding: 8rem;
+}
+.banners_houses h1{
+    font-size: 2.3rem;
+}
+.banners{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    gap: 1rem;
+    padding: 2rem;
+    /* width: 10vw; */
 
+}
 
-
+.banners img{
+    width: 80px;
+    height: 250px;
+    object-fit: cover;
+    object-position: bottom;
+}
+.poster .ban_name{
+    font-size: 0.7rem;
+}
