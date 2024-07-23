@@ -1,0 +1,15 @@
+.container{
+    background-image: backgroundjpg;
+
+}
+body{
+    /* overflow: hidden;/ */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.form-group-mt-2 p{
+    color: brown;
+
+}
