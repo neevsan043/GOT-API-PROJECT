@@ -18,9 +18,11 @@ a{
 body,html{
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 .section1{
     background-image: linear-gradient(rgba(0, 0, 0, 0.815),rgba(0,0,0,0.815)),url(./Components/OIG4.jpeg);
+    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -61,11 +63,11 @@ nav h1{
     font-family: "Gothic A1", sans-serif;
 }
 .banners_houses{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.445)),url(./Components/background.webp);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.568),rgba(0, 0, 0, 0.55)),url(./Components/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
     overflow: hidden;
     text-align: center;
@@ -93,4 +95,50 @@ nav h1{
 }
 .poster .ban_name{
     font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+}
+.character_image{
+    width: 100vw;
+    height: 120vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.758),rgba(0, 0, 0, 0.788)),url(./Components/image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 0rem;
+
+}
+.character_image h1{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+.images_sec{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    padding: 1.5rem;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 3rem;
+}
+.image{
+    height: 70vh;
+    min-width: 20vw;
+}
+.image img{
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: grayscale(100%);
+
+}
+.image:nth-child(2n){
+    transform: translateY(80px);
+}
+.image h3{
+    color: white;
+    font-size: 0.7rem;
+    padding-top: 0.3rem;
+    letter-spacing: 1px;
 }
