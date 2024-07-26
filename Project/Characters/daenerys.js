@@ -9,7 +9,7 @@ let char_title = document.getElementById("char_title")
 
 const extract_char_data = async () => {
   try {
-    let character1 = await fetch('https://thronesapi.com/api/v2/Characters/2');
+    let character1 = await fetch('https://thronesapi.com/api/v2/Characters/0');
     
     let character_1_data = await character1.json();
     const character_1_data_name = character_1_data.fullName;
@@ -19,7 +19,7 @@ const extract_char_data = async () => {
   }
 
   try {
-    let character_title_1 = await fetch('https://thronesapi.com/api/v2/Characters/2');
+    let character_title_1 = await fetch('https://thronesapi.com/api/v2/Characters/0');
     
     let character_1_data = await character_title_1.json();
     const character_1_data_title = character_1_data.title;

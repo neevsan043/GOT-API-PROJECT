@@ -9,8 +9,8 @@ html {
 }
 
 body {
-    background: url(components/johnsnow.png);
-    /* background: url(components/daenerys.jpg); */
+    background: url(components/rob.png);
+    
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -68,11 +68,14 @@ body {
     justify-content: space-between;
 }
 
-#nextBtn a{
+
+#prevBtn a ,#nextBtn a{
     text-decoration: none ;
     text-wrap: wrap;
     
 }
+
+
 .container {
     text-decoration: none;
     color: grey;
