@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="slider-container">
+        <div class="main-image" id="main-image">
+            <!-- Background image will be set through CSS -->
+        </div>
+        <div class="thumbnails">
+            <div class="thumbnail" onclick="changeBackground('Daenerystar.jpg', 0)">
+                <img src="Daenerystar.jpg" alt="Daenerystar">
+            </div>
+            <div class="thumbnail" onclick="changeBackground('jonsnows.jpg', 1)">
+                <img src="jonsnows.jpg" alt="jonsnows">
+            </div>
+            <div class="thumbnail" onclick="changeBackground('sansa.jpg', 2)">
+                <img src="sansa.jpg" alt="sansa">
+            </div>
+            <div class="thumbnail" onclick="changeBackground('Tyrion..jpg', 3)">
+                <img src="Tyrion.jpg" alt="Tyrion">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
