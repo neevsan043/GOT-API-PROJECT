@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <img src="image2.png" class="got" alt="">
+        <div class="line"></div>
+        <ul>
+            <a href="../Home_page/main.html">HOME</a>
+            <a href="../Characters/land.html">CHARACTER</a>
+            <a href="../Houses/index.html">HOUSES</a>
+            <a href="#">GAME</a>
+        </ul>
+    </nav>
+    <div class="slider-container">
+        <div class="text">
+            <h1>The iron throne</h1>
+            <h5>click on your favourite character to see them on the throne</h5>
+        </div>
+        <div class="thumbnails">
+            <div class="thumbnail" onclick="changeBackground('tyrion-thumb.jpg', 0)">
+                <img src="Daenerystar.jpg" alt="Daenerystar">
+            </div>
+            <div class="thumbnail" onclick="changeBackground('arya-thumb.jpg', 1)">
+                <img src="jonsnows.jpg" alt="jonsnows">
+            </div>
+            <div class="thumbnail" onclick="changeBackground('jon-thumb.jpg', 2)">
+                <img src="sansa.jpg" alt="sansa">
+            </div>
+            <div class="thumbnail" onclick="changeBackground('daenerys-thumb.jpg', 3)">
+                <img src="Tyrion.jpg" alt="Tyrion">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

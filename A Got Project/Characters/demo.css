@@ -1,0 +1,242 @@
+@font-face {
+    font-family: got;
+    src: url(./components/got.ttf);
+}
+
+html {
+    font-family: got;
+    letter-spacing: 3px;
+}
+
+body {
+    background: url(./components/johnsnow.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.nav ul {
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.nav ul a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.line {
+    border-top: 2px solid grey;
+    flex-grow: 1;
+
+}
+
+.got {
+    width: 100%;
+    max-width: 300px;
+}
+
+.nav li {
+    padding: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+@keyframes line {
+    0% {
+        border-bottom: 0px solid white;
+    }
+
+    100% {
+        border-bottom: 2px solid white;
+    }
+}
+
+.nav li:hover {
+    font-size: 1.2rem;
+    padding: 5.5px;
+    animation: line 1s;
+    animation-timing-function: ease-out;
+}
+
+.travel {
+    display: flex;
+    justify-content: space-between;
+}
+
+#nextBtn a {
+    text-decoration: none;
+    text-wrap: wrap;
+
+}
+
+.bottom {
+    height: 40%;
+}
+
+.container {
+    text-decoration: none;
+    color: grey;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.text {
+    color: white;
+    text-align: end;
+    font-size: 2rem;
+    line-height: 1.5;
+    margin: 0rem 4rem;
+    height: 25vh;
+}
+
+.text h6 {
+    letter-spacing: 5px;
+    color: white;
+    font-size: 1rem;
+    transition: all 1s ease;
+}
+
+.text h1 {
+    color: snow;
+    letter-spacing: 10px;
+    transition: all 1s ease;
+}
+
+.travel button {
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.6s ease-out;
+
+
+}
+
+.travel {
+    margin-top: 3rem;
+    padding: 0rem 2rem;
+}
+
+.explore {
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    width: fit-content;
+    padding: 0.8rem;
+    text-decoration: none;
+    transition: all 0.6s ease-out;
+    font-weight: 700;
+}
+
+.hover:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
+    .text {
+        font-size: 1.8rem;
+        margin: 3rem;
+    }
+
+    .text h6 {
+        font-size: 1rem;
+    }
+
+    .nav li:hover {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .text {
+        font-size: 1.6rem;
+        margin: 2rem;
+    }
+
+    .text h6 {
+        font-size: 0.8rem;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .text {
+        font-size: 0.7rem;
+        margin: 1rem;
+    }
+
+    .text h6 {
+        font-size: 0.3rem;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .nav li {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .text {
+        font-size: 1.2rem;
+        margin: 0.5rem;
+    }
+
+    .text h1 {
+        font-size: 0.8rem;
+    }
+
+    .nav ul {
+        gap: 2px;
+    }
+
+    .nav li {
+        padding: 3px;
+    }
+
+    .got {
+        width: 80%;
+    }
+}
