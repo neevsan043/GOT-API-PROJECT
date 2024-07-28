@@ -2,7 +2,7 @@ let char_name = document.getElementById("name");
 let char_title = document.getElementById("char_title");
 let body = document.querySelector("body");
 
-let charUrl = ["./components/johnsnow.jpg", "./components/arya.jpeg", "./components/niya.jpg", "./components/tyrion.jpg", "components/rob.jpg"]
+let charUrl = ["./components/rob.jpg", "./components/arya.jpeg", "./components/niya.jpg", "./components/tyrion.jpg", "components/johnsnow.jpg"]
 let charName = ["Jon Snow", "Arya Stark", "Daenerys Targaryen", "Tyrion Lannister", "Rob Stark"]
 let charTittle = ["King In The North", "No One", "Mother Of Dragons", "Hand Of The Queen", "Lord Of Winterfell"]
 let counter = 0;
